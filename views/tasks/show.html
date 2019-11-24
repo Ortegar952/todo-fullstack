@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="/js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+    <style>
+    body{
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+    h3{
+        font-family: 'Permanent Marker', cursive;
+        width: 100%;
+        height: 50px;
+        padding:0;
+        margin:0;
+        color: white;
+        background-color: black;
+        padding-top: 10px;
+        text-align: center;
+    } 
+     .todo-list{
+        margin-top: 80px;
+    }
+    .content{
+        font-family: 'Josefin Slab', serif;
+        border: solid black 1px;
+        width: 400px;
+        height:200px;
+        display:block;
+        text-align:start;
+        margin:20px auto;
+
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .content span{
+        font-weight: bold;
+        font-size: 19px;
+    } 
+
+    .btn{
+        padding: 10px;
+        border: solid black 1px;
+        margin-left: 30px;
+    }
+
+    .btn:hover{
+        border-color:#008CBA 2px;
+        cursor: pointer;
+    }
+   
+    </style>
+<body>
+        <div class='content'>
+                <h3>Task Successfully Created</h3>
+                <ol>
+                    <li><h4><Span>Todo Item:</Span> {{ name }}</h4></li>
+                </a>
+                    <p><Span>Message:</Span> {{ message }}</p>
+                    <p><Span>Subject:</Span> {{ subject }}</p>
+                </ol>
+        </div>
+        <a href='/tasks/'><button class='btn'>Go Back To Todo List</button></a>
+</body>
+</html>
