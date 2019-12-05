@@ -36,11 +36,12 @@ function packUpForm(){
 
     if(document.getElementById("delete-btn")){
        document.querySelectorAll('#delete-btn').forEach(item =>{
-         item.addEventListener('click', event =>{
+         item.addEventListener('click',()=>{
           console.log('Im being click,delete btn');
 
-          const id = document.getElementById("delete-btn").value;
-          // console.log(id);
+          // const id = document.getElementById("delete-btn").value;
+          const id =item.value;
+          console.log(id);
           fetch('/api/tasks/' + id, {
                   method: 'delete',
                   body:    JSON.stringify({id: id}),
@@ -52,21 +53,6 @@ function packUpForm(){
           .catch(err => console.error("fetch error: ", err));
          })
        })
-      //   document.getElementById("delete-btn").addEventListener("click", function(){
-      //   console.log('Im being click,delete btn');
-
-      //   const id = document.getElementById("delete-btn").value;
-      //   // console.log(id);
-      //   fetch('/api/tasks/' + id, {
-      //           method: 'delete',
-      //           body:    JSON.stringify({id: id}),
-      //           headers: { 'Content-Type': 'application/json' }
-      //   })
-      //   .then(response => {
-      //       window.location.replace('/tasks/');
-      //   })
-      //   .catch(err => console.error("fetch error: ", err)); // end of functional instructions
-      // });//end of event listener
     } 
   }; // end of window.onload
     

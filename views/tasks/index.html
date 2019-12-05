@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Todo Fullstack App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
     <!-- <script src="main.js"></script> -->
@@ -77,7 +77,7 @@
     <div class='todo-list'>
       {{ #tasks }}
         <div class='content'>
-            <a href="/task/{{ id }}">
+            <a href="/task/{{ id }}" >
             <ol>
                 <li><h4><Span>Todo Item:</Span> {{ name }}</h4></li>
             </a>
