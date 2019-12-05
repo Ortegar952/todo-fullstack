@@ -36,10 +36,10 @@ function packUpForm(){
 
     if(document.getElementById("delete-btn")){
        document.querySelectorAll('#delete-btn').forEach(item =>{
-         item.addEventListener('click',()=>{
+         item.addEventListener('click',(e)=>{
+         e.preventDefault();
           console.log('Im being click,delete btn');
 
-          // const id = document.getElementById("delete-btn").value;
           const id =item.value;
           console.log(id);
           fetch('/api/tasks/' + id, {

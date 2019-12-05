@@ -78,12 +78,12 @@
       {{ #tasks }}
         <div class='content'>
             <a href="/task/{{ id }}" >
-            <ol>
+            <ul>
                 <li><h4><Span>Todo Item:</Span> {{ name }}</h4></li>
             </a>
                 <p><Span>Message:</Span> {{ message }}</p>
                 <p><Span>Subject:</Span> {{ subject }}</p>
-            </ol>
+            </ul>
             <button id='delete-btn' value={{ id }} class='btn'>Delete Task / Completed</button>
         </div>
         {{ /tasks }}
