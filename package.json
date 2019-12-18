@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf node_modules",
-    "heroku-prebuild": "bash ./script/deployment_cleanup.sh",
+    "heroku-prebuild": "bash ./scripts/deploy_cleanup.sh",
     "start": "node app.js"
 
   },
