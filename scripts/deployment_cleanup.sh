@@ -15,7 +15,7 @@ npm i --only=dev --ignore-scripts
 ​
 # Remove the DEV version of node modules
 rm -rf node_modules
-Collapse
+
 
 
 
